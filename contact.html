@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body> 
+    <nav> <!--Navigation Bar-->
+        <ul> <!--Currently with dead links-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>  
+    <div class="split left">
+        <div style="float: right;">
+            <h1>Contact</h1>
+            <br>
+            <div style="padding: 10%; padding-top: 15%;">
+                <button style="padding-right: 30%;" onclick="CopyEmail()" id="email">
+                    <img src="GitHubPH.png" width="100px" height="100px" >
+                </button>
+                <button onclick="CopyPhone()" id="phone">
+                    <img src="GitHubPH.png" width="100px" height="100px" >
+                </button>
+            </div>     
+        </div>
+        
+    </div> 
+
+    <div class="split right"> 
+        <h1>Me</h1>
+        <br>
+        <div style="padding: 10%;">
+            <a style="padding-right: 30%;" href="https://github.com/SamihaKamal">
+                <img src="GitHubPH.png" width="100px" height="100px">
+            </a>
+            <a href="https://www.linkedin.com/in/samiha-kamal-12b4131b8/">
+                <img src="LinkedinPH.png" width="100px" height="100px">
+            </a>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script>
+    function CopyEmail() {
+        
+      // Copy the text inside the text field
+      navigator.clipboard.writeText("samihakamal.7664@gmail.com");
+      
+      // Alert the copied text
+      alert("Copied the text: " + "samihakamal.7664@gmail.com");
+    }
+    function CopyPhone() {
+        
+        // Copy the text inside the text field
+        navigator.clipboard.writeText("07478492073");
+        
+        // Alert the copied text
+        alert("Copied the text: " + "07478492073");
+      }
+    </script>

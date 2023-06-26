@@ -1,3 +1,7 @@
+button {
+  background-color: transparent;
+  border: transparent;
+}
 
 .btn {
   text-decoration: none;
@@ -19,7 +23,7 @@
 h1 {
   font-size: 8vw;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: rgb(12, 9, 9);
 }
 
 nav ul { /*For the navigation bar*/
@@ -72,6 +76,7 @@ nav li a:hover {
   .left {
     left: 0;
     background-color: #ffffff;
+    box-shadow: 0px, 10px, 16px; 
   }
   
   /* Control the right side */
